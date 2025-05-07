@@ -1,0 +1,24 @@
+{
+  "name": "nofood.api",
+  "version": "1.0.0",
+  "description": "Api feita em Nodejs para ultilização do nosso aplicativo NoFood",
+  "homepage": "https://github.com/kauass/NoFoodApp#readme",
+  "bugs": {
+    "url": "https://github.com/kauass/NoFoodApp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kauass/NoFoodApp.git"
+  },
+  "license": "ISC",
+  "author": "Kauã Santos Silva",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0"
+  }
+}
