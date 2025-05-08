@@ -1,4 +1,7 @@
 'use strict'
+require('../models/produto-model')
+const moongose = require('mongoose');
+const produto = moongose.model('Produto');
 
 function produtoController() {
 
