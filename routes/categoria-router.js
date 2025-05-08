@@ -2,17 +2,18 @@
 
 const express = require('express');
 const router = express.Router();
+const categoriaController = require('../controllers/categoria-controller')
 
-router.get('/', (req,res) => { 
-    res.status(200).send('Funcionadno')
-});
+let _ctrl = new categoriaController();
 
-router.get('/:id', (req,res) => { });
+router.get('/', _ctrl.get);
 
-router.post('/', (req,res) => { });
+router.get('/:id', _ctrl.getById);
 
-router.put('/:id', (req,res) => { });
+router.post('/', _ctrl.post);
 
-router.delete('/:id', (req,res) => { })
+router.put('/:id', _ctrl.put);
+
+router.delete('/:id', _ctrl.delete)
 
 module.exports = router;
