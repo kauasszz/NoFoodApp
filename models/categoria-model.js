@@ -5,8 +5,8 @@ const schema = mongoose.Schema;
 
 const categoriaModel = new schema({
     nome: { type: String, trim: true, index: true, required: true },
-    descricao: { type: String, required: true },
-    preco: { type: Number, required: true },
+    descricao: { type: String },
+    foto: { type: String, required: true },
     ativo: { type: Boolean, required: true },
     dataCriacao: { type: Date, default: Date.now }
 }, { versionKey:false });

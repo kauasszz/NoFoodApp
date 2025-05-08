@@ -5,7 +5,8 @@ const schema = mongoose.Schema;
 
 const produtoModel = new schema({
     titulo: { trim: true, index: true, required: true, type: String },
-    descricao: { type: String },
+    descricao: { type: String, required: true },
+    preco: { type: Number, required: true },
     foto: { type: String, required: true },
     ativa: { type: Boolean, required: true },
     dataCriacao: { type: Date, default: Date.now }
@@ -17,3 +18,6 @@ produtoModel.pre('save', next => {
         this.dataCriacao = agora;
     next();
 });
+
+
+module.exports = mongoose.model('Produto', produtoModel);
