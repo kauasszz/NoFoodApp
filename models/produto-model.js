@@ -19,5 +19,4 @@ produtoModel.pre('save', next => {
     next();
 });
 
-
 module.exports = mongoose.model('Produto', produtoModel);
