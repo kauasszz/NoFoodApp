@@ -3,6 +3,7 @@ require('../models/categoria-model')
 const moongose = require('mongoose');
 const categoria = moongose.model('Categoria');
 const repository = require('../repositories/categoria-repository');
+
 function categoriaController() {
 
 }
